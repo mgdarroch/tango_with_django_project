@@ -3,7 +3,11 @@
 {% load staticfiles %}
 
 {% block title_block %}
-    Category
+    {% if category %}
+        {{ category.name }}
+    {% else %}
+        Unknown Category
+    {% endif %}
 {% endblock %}
 
 {% block body_block %}
