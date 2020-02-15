@@ -8,10 +8,11 @@
 
 {% block body_block %}
     <div>
+        <h1>Rango says...</h1>
         {% if user.is_authenticated %}
-            Rango says howdy there {{ user.username }}
+            howdy {{ user.username }}!
         {% else %}
-            Rango says hey there partner!
+            hey there partner!
         {% endif %}
     </div>
     <div>
